@@ -162,3 +162,82 @@ header {
     width: 100%;
     font-size: 1rem;
 }
+
+.book-list, #wishlist {
+    margin-top: 20px;
+    display: grid;
+    gap: 20px;
+}
+
+/* Responsive Grid */
+@media (min-width: 1024px) {
+    .book-list, #wishlist {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .book-list, #wishlist {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .book-list, #wishlist {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Book Item Styles */
+.book-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    transition: box-shadow 0.3s, opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(20px);
+}
+
+/* Class for books that are visible */
+.book-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.book-cover {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.book-title {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.book-author {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.book-id {
+    color: #555;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.wishlist-icon {
+    cursor: pointer;
+    color: red;
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.wishlist-icon:hover {
+    transform: scale(1.2);
+}
