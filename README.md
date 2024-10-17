@@ -1,6 +1,6 @@
 # Amt-BK
 
-Amt-BK is an online book library application that fetches data from the [Gutendex API](https://gutendex.com/books) and provides various functionalities such as search, filtering by genre, wishlist management, pagination, and a detailed view for each book. The project is built using vanilla JavaScript and CSS, ensuring a fast and responsive user experience.
+Amt-BK is an online book library application that fetches data from the [Gutendex API](https://gutendex.com/books) and provides various functionalities such as search, filtering by genre, wishlist management, pagination, and a detailed view for each book.  I don’t use any templates for the UI. The project is built using vanilla JavaScript and CSS, ensuring a fast and responsive user experience.
 
 ## Features
 
