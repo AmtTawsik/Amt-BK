@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Amt-BK</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @media (max-width: 600px) {
+            .hide-on-small {
+                display: none;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar">
+
+            <div class="navbar-left">
+                <a href="#" class="logo">AmtBK</a>
+            </div>
+            <div class="navbar-center">
+                <input type="text" id="search-bar" class="search-input" placeholder="Search for books...">
+            </div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <div class="navbar-right" id="nav-links">
+                <a href="#" class="nav-link" id="home-link">Home</a>
+                <a href="wishlist.html" class="nav-link" id="wishlist-link">Wishlist</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div style="display: flex; width: 100%; gap: 25px; align-items: center; margin-top: 20px;">
+            <div class="search-filter" style="flex: 1;">
+                <select id="genre-filter">
+                    <!-- Add genre options here -->
+                </select>
+            </div>
+        </div>
+
+
+        <div id="loading-spinner" class="loading-spinner" style="display: none;">
+            <!-- Loading spinner -->
+        </div>
+        <div id="book-list" class="book-list">
+            <!-- I will show the books here here -->
+        </div>
+        <div id="pagination" class="pagination">
+            <!-- Pagination here -->
+        </div>
+    </main>
+    <script src="app.js"></script>
 </body>
+
 </html>
